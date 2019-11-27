@@ -35,7 +35,7 @@ function steps(n, row = 0, stair = '') {
 module.exports = steps;
 
 
-/* 1st SOLUTION */
+/* 1st SOLUTION: Iterative Solution*/
 // function steps(n) {
 //     for (let row = 0; row < n; row++) {
 //         let stair = '';
