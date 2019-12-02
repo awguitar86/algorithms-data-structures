@@ -8,6 +8,18 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+function reverseInt(n) {
+    return parseInt(n.toString().split('').reverse().join('')) * Math.sign(n);
+}
 
 module.exports = reverseInt;
+
+
+/* parseInt() */
+// Parses a string and returns an integer
+
+/* toString() */
+// converts a number to a string
+
+/* Math.sign() */
+// returns either a positive or negative 1 indicating the sign of the number passed into the argument.

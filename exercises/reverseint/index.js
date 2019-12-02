@@ -24,3 +24,13 @@ module.exports = reverseInt;
 //         return parseInt(reversed.join(''));
 //     }
 // }
+
+
+/* parseInt() */
+// Parses a string and returns an integer
+
+/* toString() */
+// converts a number to a string
+
+/* Math.sign() */
+// returns either a positive or negative 1 indicating the sign of the number passed into the argument.
