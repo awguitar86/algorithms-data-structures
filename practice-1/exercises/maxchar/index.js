@@ -7,7 +7,7 @@
 
 function maxChar(str) {
     let obj = {};
-    let max = 0;
+    let maxNum = 0;
     let maxChar = '';
 
     for (let char of str) {
@@ -15,8 +15,8 @@ function maxChar(str) {
     }
 
     for (let char in obj) {
-        if (obj[char] > max) {
-            max = obj[char];
+        if(obj[char] > maxNum) {
+            maxNum = obj[char];
             maxChar = char;
         }
     }
