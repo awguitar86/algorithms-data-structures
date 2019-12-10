@@ -44,7 +44,7 @@ module.exports = chunk;
 //     let index = 0;                                       // Create "index" start at 0
 
 //     while(index < array.length) {                        // While "index" is less than array.length
-//         chunked.push(array.slice(index, index + size));  //      Push a lice of length "size" from "array" into "chunked"
+//         chunked.push(array.slice(index, index + size));  //      Push a slice of length "size" from "array" into "chunked"
 //         index += size;                                   //      Add "size" to "index"
 //     }
 
