@@ -40,7 +40,7 @@ module.exports = capitalize;
 
 //     for(let i = 1; i < str.length; i++) {            // For each character in the string
 //         if(str[i -1] === ' ') {                      // IF the character to the left is a space
-//             result += str[i].toUpperCase();          // Capitalize it and add it to teh 'result' string
+//             result += str[i].toUpperCase();          // Capitalize it and add it to the 'result' string
 //         } else {
 //             result += str[i];                        // Else add it to the 'result' string
 //         }

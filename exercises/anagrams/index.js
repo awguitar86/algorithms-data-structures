@@ -23,12 +23,12 @@ module.exports = anagrams;
 // function anagrams(stringA, stringB) {
 //     const aCharMap = buildCharMap(stringA);
 //     const bCharMap = buildCharMap(stringB);
-
-//     if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
-//         return false;
+                                                                                // If the length of the two strings do not match then they automatically are not anagrams.            
+//     if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {     // Object.keys() creates an array of all the keys of an object. This is seeing if the array of keys from stringA is not equal to array of keys of stringB.
+//         return false;                                                        
 //     }
 
-//     for (let char in aCharMap) {
+//     for (let char in aCharMap) {                                             // If the length of the two strings match then they could be anagrams and we just need to check that each character is the same.
 //         if(aCharMap[char] !== bCharMap[char]) {
 //             return false;
 //         }
@@ -40,7 +40,7 @@ module.exports = anagrams;
 // function buildCharMap(str) {
 //     const charMap = {};
 
-//     for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
+//     for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {              // the RegEx here gets rid of everything that is not a word.
 //         charMap[char] = charMap[char] + 1 || 1;
 //     }
 //     return charMap;
@@ -53,5 +53,5 @@ module.exports = anagrams;
 // }
 
 // function cleanString(str) {
-//     return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+//     return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');    // This is gettign rid of all non-word characters, then split the string, sorting it from a to z and joining them into one string.
 // }
