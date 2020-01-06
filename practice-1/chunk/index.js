@@ -10,7 +10,7 @@
 
 function chunk(array, size) {
   const chunked = [];																	// create empty array to chunk array
-  let index = 0;																			// create index variable to keep track chunks in chunked array
+  let index = 0;																			// create index variable to keep track of chunks in chunked array
 
   while( index < array.length ) {											// while index is less than the length of the array
     chunked.push(array.slice(index, index + size));		// push a slice of the array from the index to the index plus the size into chunked
