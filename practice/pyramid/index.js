@@ -14,7 +14,7 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n, row = 0, level = '') {
+function pyramid(n) {
 
 }
 
