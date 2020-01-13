@@ -18,3 +18,10 @@
 function matrix(n) {}
 
 module.exports = matrix;
+
+/*
+        startCol      endCol
+startRow  [[1,    2,    3],
+           [8,    9,    4],
+   endRow  [7,    6,    5]]
+*/

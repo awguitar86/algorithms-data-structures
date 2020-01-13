@@ -14,21 +14,27 @@
 //     [12, 13, 14, 5],
 //     [11, 16, 15, 6],
 //     [10,  9,  8, 7]]
+/*
+        startCol      endCol
+startRow  [[1,    2,    3],
+           [8,    9,    4],
+   endRow  [7,    6,    5]]
+*/
 
 function matrix(n) {
-  const results = []
-  
-  for (let i = 0; i < n; i++) {
+  const results = []                                // Create array for inner arrays to go into
+
+  for (let i = 0; i < n; i++) {                     // Create for loop to push in n empty arrays
     results.push([])
   }
-  
+
   let counter = 1
   let startCol = 0
   let endCol = n - 1
   let startRow = 0
   let endRow = n - 1
 
-  while(startCol <= endCol && startRow <= endRow) {
+  while(startCol <= endCol && startRow <= endRow) {  //
     for (let i = startCol; i <= endCol; i++) {
       results[startRow][i] = counter
       counter++
